@@ -3,9 +3,19 @@
 
 body { /* Visual */
     background: black;
+    color: whitesmoke;
+    text-align: center;
   }
   
-  #points {
+.scorebox {
+    float: left;
+}
+
+#score {
+    float: right;
+}
+
+  #counter {
     font-family: monospace;
     font-size: 120px;
     color: green;
@@ -22,7 +32,7 @@ body { /* Visual */
     width: 500px;
   
     /* Positioning */
-    margin: 50px auto 0;
+    margin: 20px auto 0;
   }
   
   #buttons { /* Typography */
@@ -51,6 +61,12 @@ body { /* Visual */
   
     /* Visual */
     background: white;
+  }
+
+  #title-text {
+      text-align: center;
+      color: seashell;
+      padding-top: 15px;
   }
 
 /*  old css */

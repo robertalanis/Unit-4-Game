@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crystal Collector</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Collector</title>
 
     <!-- Link CSS Sheets -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -14,56 +14,56 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/cf484c4abb.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </head>
 
   <body>
 
     <div id="wrapper">
 
-      <div id="points">????</div>
+      <div class="scorebox"><div id="goal"></div></div>
+
+      <div id="score">
+        <div class="win-count">Wins : <div id="wins">0</div></div>
+        <div class="loss-count">Losses: <div id="losses">0</div></div>
+      </div>
+
+      <div id="counter">?</div>
 
       <!-- Div containing our controls -->
       <div id="buttons">
-        <button id="crystal-1"><i class="fas fa-frog"></i></button>
-        <button id="crystal-2"><i class="fas fa-kiwi-bird"></i></button>
-        <button id="crytsal-3"><i class="fas fa-otter"></i></button>
-        <button id="crytal-4"><i class="fas fa-hippo"></i></button>
+        <button id="frog" class = "animal"><i class="fas fa-frog"></i></button>
+        <button id="bird" class = "animal" ><i class="fas fa-kiwi-bird"></i></button>
+        <button id="otter" class = "animal" ><i class="fas fa-otter"></i></button>
+        <button id="hippo" class = "animal" ><i class="fas fa-hippo"></i></button>
       </div>
 
 
       <div class="main-container">
         <div class="title">
-          <h1 id="title-text">Crystal Collectors Game!</h1>
+          <h1 id="title-text">Animal Collectors Game!</h1>
         </div>
         <div id="instructions">
           <p>You will be given a random number at the start of the game.</p>
-            <br>
-          <p>There are four crytals below. By clicking on a crystal you will add a specifica amoutn of ponts to your total score.</p>  
-            <br>
+          <p>There are four animals above. The value of each animal is hidden, but will add a specific amount of points to your total score.</p>  
           <p>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.</p>
-            <br>
-          <p>The value of each crystal is hidden from you until you click on it.</p>
-            <br>
-          <p>Each time the game starts, the game will change the value of each crystal.</p>            
+          <p>Each time the game starts, the value of each animal.</p>            
         </div>
 
-        <div class="score">
-          <div class="wins"></div>
-          <div class="losses"></div>
-      </div>
+      
      
-      <div class="current"></div>
+      
 
       </div>
 
     </div>
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- Script -->
-    <script src="./assets/javascript/"></script>
+    <script src="./assets/javascript/game.js"></script>
 
   </body>
 </html>
