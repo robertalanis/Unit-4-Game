@@ -1,4 +1,3 @@
-$(document).ready(function() {
   //random number function
   let getRandomNumber = function(start, range) {
     let getRandom = Math.floor(Math.random() * range + start);
@@ -26,7 +25,7 @@ $(document).ready(function() {
     counter = 0;
     $("#goal").html(goal);
     goal = getRandomNumber(19, 120);
-    $("#counter").html(goal);
+    $("#counter").html(counter);
     frog = getRandomNumber(1, 12);
     bird = getRandomNumber(1, 12);
     otter = getRandomNumber(1, 12);
@@ -72,4 +71,3 @@ $(document).ready(function() {
       reset();
     }
   }
-});

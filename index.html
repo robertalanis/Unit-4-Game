@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crystal Collector</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal Collector</title>
 
     <!-- Link CSS Sheets -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -15,55 +15,67 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/cf484c4abb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/cf484c4abb.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- jQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
   </head>
 
   <body>
-
     <div id="wrapper">
+      
+      <div class="win-count">
+        Wins :
+        <div id="wins">0</div>
+      </div>
 
-      <div class="scorebox"><div id="goal"></div></div>
-
-      <div id="score">
-        <div class="win-count">Wins : <div id="wins">0</div></div>
-        <div class="loss-count">Losses: <div id="losses">0</div></div>
+      <div class="loss-count">
+        Losses:
+        <div id="losses">0</div>
       </div>
 
       <div id="counter">?</div>
 
       <!-- Div containing our controls -->
       <div id="buttons">
-        <button id="frog" class = "animal"><i class="fas fa-frog"></i></button>
-        <button id="bird" class = "animal" ><i class="fas fa-kiwi-bird"></i></button>
-        <button id="otter" class = "animal" ><i class="fas fa-otter"></i></button>
-        <button id="hippo" class = "animal" ><i class="fas fa-hippo"></i></button>
+        <button id="frog" class="animal"><i class="fas fa-frog"></i></button>
+        <button id="bird" class="animal">
+          <i class="fas fa-kiwi-bird"></i>
+        </button>
+        <button id="otter" class="animal"><i class="fas fa-otter"></i></button>
+        <button id="hippo" class="animal"><i class="fas fa-hippo"></i></button>
       </div>
-
 
       <div class="main-container">
         <div class="title">
-          <h1 id="title-text">Animal Collectors Game!</h1>
+          <h1 id="title-text">Animal Collectors Game</h1>
         </div>
+        <div class="scorebox">
+          <h2>Goal: <span id ="goal"></span></h2>
+        </div>
+        <button type="button" class="collapsible">Instructions</button>
         <div id="instructions">
           <p>You will be given a random number at the start of the game.</p>
-          <p>There are four animals above. The value of each animal is hidden, but will add a specific amount of points to your total score.</p>  
-          <p>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.</p>
-          <p>Each time the game starts, the value of each animal.</p>            
+          <p>
+            There are four animals above. The value of each animal is hidden,
+            but will add a specific amount of points to your total score.
+          </p>
+          <p>
+            You win the game by matching your total score to a random number.
+            You lose the game if your total score goes above the random number.
+          </p>
+          <p>Each time the game starts, the value of each animal.</p>
         </div>
-
-      
-     
-      
-
       </div>
-
     </div>
 
     <!-- Script -->
+    <script src="./assets/javascript/collapsible-box.js"></script>
     <script src="./assets/javascript/game.js"></script>
-
   </body>
 </html>
